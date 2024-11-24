@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+body {
+
+    background: url(./assets/Fundo\ Virtual\ para\ RH\ Simples\ Rosa\ e\ Lilás\ \(5\).png);
+}
+
+.container-buttons {
+
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+button {
+    background-color: rgb(7, 177, 92);
+    border-radius: 5px;
+    border: none;
+    color: #0c4244;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 110px;
+    box-shadow: 0pc 10px 20px #bb80d3;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+ul {
+
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    cursor: pointer;
+
+
+}
+
+li {
+    border: 2px solid #920392;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0pc 5px 15px #bb80d3;
+
+}
+
+
+    img {
+        width: 100%;
+        max-width: 360px;
+    }
+    
+
+
+p {
+
+    color: bisque;
+}
+
+.inten-price {
+    font-weight: bold;
+    color: rgb(92, 168, 16);
+}
+
+@media (max-width: 768px) {
+    .container-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+
+
